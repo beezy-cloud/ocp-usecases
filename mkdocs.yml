@@ -58,8 +58,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
-  - Projects: 'index.md'
-  # - Contributing: 'contributing.md'
+  - Intro: 'index.md'
+  - Use Cases: 
+    - Hybrid/Multi Cloud: 'ocp-mcm-vm.md'
   # - Support: 'support.md'
   # - Discoblocks: 
   #   - Documentation:
