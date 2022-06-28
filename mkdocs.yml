@@ -1,0 +1,81 @@
+site_name: ocp-usecases 
+# site_url: https://beezy.sh
+theme:
+  font:
+    text: Red Hat Text
+    code: Red Hat Mono
+  # logo: images/ondat_logo_darkbg.webp
+  features:
+    - content.code.annotate
+    - navigation.top
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  palette: 
+    - scheme: default
+      primary: white 
+      accent: blue 
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate 
+      primary: black 
+      accent: blue 
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+extra_css: 
+  - stylesheets/extra.css
+extra:
+  # social:
+  #   - icon: fontawesome/brands/github 
+  #     link: https://github.com/beezy-sh/refactored-lamp
+  #   - icon: fontawesome/brands/slack
+  #     link: https://storageos.slack.com/ 
+  #   - icon: fontawesome/brands/twitter
+  #     link: https://twitter.com/ondat_io
+  #   - icon: fontawesome/brands/linkedin
+  #     link: https://www.linkedin.com/company/ondat/
+  #   - icon: fontawesome/brands/youtube
+  #     link: https://www.youtube.com/channel/UCWhaUE5K9RfkJVGrHys3xug
+  generator: true
+# copyright: Copyright &copy; 2021 Ondat. All righ reserved. 
+repo_url: https://github.com/beezy-cloud/ocp-usecases.git
+repo_name: beezy-cloud/ocp-usecases
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - def_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Projects: 'index.md'
+  # - Contributing: 'contributing.md'
+  # - Support: 'support.md'
+  # - Discoblocks: 
+  #   - Documentation:
+  #     - Release Notes: 'discoblocks/release_notes.md'
+  #     - Architecture: 'discoblocks/architecture.md'
+  #     - Deployment: 'discoblocks/deployment.md'
+  #     - Operations: 'discoblocks/operations.md'
+  #   - Community & Media: 'discoblocks/community.md'
+  # - Trousseau: 
+  #   - Documentation:
+  #     - Release Notes: 'trousseau/release_notes.md'
+  #     - Architecture: 'trousseau/architecture.md'
+  #     - Deployment: 'trousseau/deployment.md'
+  #     - Operations: 'trousseau/operations.md'
+  #   - Community & Media: 'trousseau/community.md'
+
+plugins:
+  - diagrams
+  - search
